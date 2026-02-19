@@ -1,6 +1,6 @@
 {
   "name": "inetdayimagawa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "地域密着型 半日デイサービスの公式サイトプロジェクト。 「初見30秒で『何の施設か／何ができるか』を理解させ、次アクションを2択に固定する」ことを目的とした静的ウェブサイトです。",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "start": "vite",
     "predeploy": "rm -rf dist && npm run build",
-    "deploy": "gh-pages -d dist --dotfiles"
+    "deploy": "gh-pages -d dist --dotfiles --verbose"
   },
   "repository": {
     "type": "git",
