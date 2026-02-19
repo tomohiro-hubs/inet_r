@@ -17,7 +17,11 @@ export default function ContactPage() {
                         00-0000-0000
                     </a>
                     <p className="text-xs text-gray-400 mt-4 mb-1 font-bold">※営業電話はお断りします。</p>
-                    <p className="text-sm text-subtext">受付時間：月〜金 9:00〜17:00</p>
+                    <div className="mt-4 text-sm text-subtext font-medium leading-relaxed">
+                        <p>受付時間：</p>
+                        <p>月〜金 9:00-18:00</p>
+                        <p>土 9:00-13:00</p>
+                    </div>
                 </div>
             </div>
 
