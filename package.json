@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:css": "tailwindcss -i ./src/input.css -o ./assets/style.css",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,15 +18,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/tomohiro-hubs/inetdayimagawa/issues"
   },
-  "homepage": "https://github.com/tomohiro-hubs/inetdayimagawa#readme",
+  "homepage": "https://tomohiro-hubs.github.io/inet_r/",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.24",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
     "vite": "^7.3.1"
