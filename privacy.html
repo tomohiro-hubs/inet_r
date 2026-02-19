@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | アイネットデイサービスセンター</title>
+
+    <!-- Tailwind CSS -->
+    <link href="./assets/style.css" rel="stylesheet">
+    <style>
+        /* Reset */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #aaa;
+        }
+    </style>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-white text-text flex flex-col min-h-screen">
+
+    <!-- Header (Static) -->
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="assets/logo_new.jpg" alt="アイネットデイサービスセンター" class="h-5 sm:h-8 md:h-12 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-sm font-medium transition-colors hover:text-clover-primary relative py-1 text-subtext">ホーム</a>
+                <a href="guide.html"
+                    class="text-sm font-medium transition-colors hover:text-clover-primary relative py-1 text-subtext">ご利用案内</a>
+                <a href="access.html"
+                    class="text-sm font-medium transition-colors hover:text-clover-primary relative py-1 text-subtext">施設概要・アクセス</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <div class="flex flex-col items-end mr-1">
+                    <span class="text-xs text-gray-500 font-bold">お気軽にご相談ください</span>
+                    <a href="tel:00-0000-0000"
+                        class="text-xl font-bold text-clover-primary font-mono leading-none hover:text-clover-dark transition-colors">00-0000-0000</a>
+                    <span class="text-[10px] text-gray-400 mt-0.5 font-medium">※営業電話はお断りします</span>
+                </div>
+                <a href="contact.html"
+                    class="bg-clover-primary hover:bg-clover-dark text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 inline-flex items-center gap-2">
+                    お問い合わせ
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 md:hidden">
+                <a href="contact.html"
+                    class="bg-clover-primary text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">お問い合わせ</a>
+                <button id="mobile-menu-btn"
+                    class="p-2 text-subtext hover:bg-muted rounded-lg focus:outline-none focus:ring-2 focus:ring-clover-light"
+                    aria-label="メニューを開く">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg animate-slide-in">
+            <nav class="flex flex-col p-4 gap-2">
+                <a href="index.html"
+                    class="p-4 rounded-xl text-base font-bold flex items-center justify-between text-text hover:bg-muted">ホーム
+                    <span class="text-clover-primary">→</span></a>
+                <a href="guide.html"
+                    class="p-4 rounded-xl text-base font-bold flex items-center justify-between text-text hover:bg-muted">ご利用案内
+                    <span class="text-clover-primary">→</span></a>
+                <a href="access.html"
+                    class="p-4 rounded-xl text-base font-bold flex items-center justify-between text-text hover:bg-muted">施設概要・アクセス
+                    <span class="text-clover-primary">→</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16 md:pt-20 animate-fade-in">
+        <div class="bg-clover-light/30 py-12 border-b border-clover-primary/5 text-center">
+            <h1 class="text-3xl font-bold text-clover-dark mb-4">プライバシーポリシー</h1>
+            <p class="text-subtext">個人情報の取り扱いについて</p>
+        </div>
+        <div class="max-w-3xl mx-auto px-4 py-12 md:py-16">
+            <div class="prose prose-green max-w-none text-gray-700">
+                <p>アイネットデイサービスセンター（以下「当事業所」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
+                </p>
+                <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">個人情報の管理</h3>
+                <p>当事業所は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
+                </p>
+                <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">個人情報の利用目的</h3>
+                <p>お客さまからお預かりした個人情報は、当事業所からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
+                <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">個人情報の第三者への開示・提供の禁止</h3>
+                <p>当事業所は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p>
+                <ul class="list-disc pl-5 my-4 space-y-2">
+                    <li>お客さまの同意がある場合</li>
+                    <li>お客さまが希望されるサービスを行なうために当事業所が業務を委託する業者に対して開示する場合</li>
+                    <li>法令に基づき開示することが必要である場合</li>
+                </ul>
+                <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">法令、規範の遵守と見直し</h3>
+                <p>当事業所は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+            </div>
+        </div>
+
+        <!-- ContactCtaBand -->
+        <section class="bg-[#EAF6EA] py-16 md:py-24 text-center border-t border-clover-primary/10">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-clover-dark mb-4 leading-tight">ご不明な点はお気軽にお問い合わせください</h2>
+                <p class="text-gray-600 mb-10 text-base md:text-lg leading-relaxed">状況に応じて、必要な情報や手順をご案内します<br
+                        class="hidden md:block" />まずはお気軽にお電話ください。</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-stretch">
+                    <a href="tel:00-0000-0000"
+                        class="bg-white px-8 py-4 rounded-xl shadow-sm flex items-center justify-center gap-4 border-2 border-transparent hover:border-clover-primary/30 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-full bg-clover-light flex items-center justify-center group-hover:scale-110 transition-transform text-clover-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-subtext font-bold">お電話でのお問い合わせ</p>
+                            <p class="text-xl font-bold text-gray-900 font-mono tracking-tight">00-0000-0000</p>
+                        </div>
+                    </a>
+                    <a href="contact.html"
+                        class="bg-clover-primary hover:bg-clover-dark text-white px-8 py-4 rounded-xl font-bold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                        お問い合わせ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="w-5 h-5">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Static) -->
+    <footer class="bg-white border-t border-border mt-auto">
+        <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <div class="mb-4">
+                        <img src="assets/logo_new.jpg" alt="アイネットデイサービスセンター" class="h-12 w-auto object-contain">
+                    </div>
+                    <p class="text-sm text-subtext">通常規模型　通所介護　デイサービス<br />〒546-0042 大阪市東住吉区西今川１丁目14-23<br />TEL:
+                        00-0000-0000</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="contact.html"
+                        class="text-sm font-medium text-subtext hover:text-clover-primary transition-colors">お問い合わせ</a>
+                    <a href="privacy.html"
+                        class="text-sm font-medium text-subtext hover:text-clover-primary transition-colors">プライバシーポリシー</a>
+                    <a href="guide.html"
+                        class="text-sm font-medium text-subtext hover:text-clover-primary transition-colors">ご利用案内</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+                <p class="text-xs text-gray-400">&copy; 2026 Ai-Net Day Service Imagawa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal JS for Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

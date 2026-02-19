@@ -1,0 +1,30 @@
+{
+  "name": "inetdayimagawa",
+  "version": "1.0.0",
+  "description": "地域密着型 半日デイサービスの公式サイトプロジェクト。 「初見30秒で『何の施設か／何ができるか』を理解させ、次アクションを2択に固定する」ことを目的とした静的ウェブサイトです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/style.css",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/style.css --watch",
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomohiro-hubs/inetdayimagawa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tomohiro-hubs/inetdayimagawa/issues"
+  },
+  "homepage": "https://github.com/tomohiro-hubs/inetdayimagawa#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  }
+}
