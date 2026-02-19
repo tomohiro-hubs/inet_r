@@ -1,6 +1,6 @@
 import React from 'react';
 
-const slideImages = Array.from({ length: 8 }, (_, i) => `./slide${i + 1}.jpg`);
+const slideImages = Array.from({ length: 8 }, (_, i) => `${import.meta.env.BASE_URL}slide${i + 1}.jpg`);
 
 export default function PhotoSlider({ className = '' }) {
     return (
