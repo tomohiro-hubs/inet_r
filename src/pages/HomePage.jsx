@@ -11,9 +11,9 @@ const CheckIcon = () => (
 /* ── Hero ── */
 function Hero() {
     const slides = [
-        { src: '/hero.jpg', alt: '明るいデイサービスの室内', style: { objectPosition: 'calc(50% - 80px) 50%' } },
-        { src: '/hero3.jpg', alt: '機能訓練の様子', className: 'object-[center_20%]' },
-        { src: '/hero2.jpg', alt: '楽しく過ごす様子', className: 'object-[center_30%]' },
+        { src: './hero.jpg', alt: '明るいデイサービスの室内', style: { objectPosition: 'calc(50% - 80px) 50%' } },
+        { src: './hero3.jpg', alt: '機能訓練の様子', className: 'object-[center_20%]' },
+        { src: './hero2.jpg', alt: '楽しく過ごす様子', className: 'object-[center_30%]' },
     ];
     const [current, setCurrent] = useState(0);
 
@@ -99,13 +99,13 @@ function AboutUs() {
                 <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
                     <div className="w-full md:w-1/2">
                         <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-border relative group">
-                            <img src="/real_exterior.jpg" alt="アイネットデイサービス外観" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                            <img src="./real_exterior.jpg" alt="アイネットデイサービス外観" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
                         <span className="text-clover-primary font-bold tracking-wider uppercase mb-2 block text-sm">About us</span>
                         <h2 className="text-3xl font-bold text-clover-dark mb-6 flex items-center gap-3">
-                            <img src="/icon_clover.png" alt="ロゴ" className="w-10 h-10 object-contain flex-shrink-0" />
+                            <img src="./icon_clover.png" alt="ロゴ" className="w-10 h-10 object-contain flex-shrink-0" />
                             アイネットデイサービス
                         </h2>
                         <div className="space-y-6 text-subtext leading-loose font-medium">
@@ -122,22 +122,22 @@ function AboutUs() {
 /* ── ServiceDetails ── */
 const services = [
     {
-        img: '/pickup.jpg', imgAlt: '送迎', title: '送迎', icon: <><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><circle cx="17" cy="17" r="2" /></>,
+        img: './pickup.jpg', imgAlt: '送迎', title: '送迎', icon: <><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><circle cx="17" cy="17" r="2" /></>,
         desc: 'ご自宅の玄関先まで、専用車でお迎えにあがります。車椅子の方も安心してご乗車いただけます。対応エリアについては施設概要ページをご確認ください。',
         checks: ['安全運転を徹底しています', '雨の日も濡れずに乗車できます'], reverse: false, brightness: true
     },
     {
-        img: '/bath.jpg', imgAlt: '入浴', title: '入浴', icon: <><path d="M9 6 6.5 3.5" /><path d="M3 7h18" /><path d="M7 19v-9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2.5" /><path d="M22 13v-3a2 2 0 0 0-2-2h-3.5" /><path d="M7 16h13.5a2.5 2.5 0 0 1 0 5h-11a2.5 2.5 0 0 1-2.5-2.5V16Z" /></>,
+        img: './bath.jpg', imgAlt: '入浴', title: '入浴', icon: <><path d="M9 6 6.5 3.5" /><path d="M3 7h18" /><path d="M7 19v-9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2.5" /><path d="M22 13v-3a2 2 0 0 0-2-2h-3.5" /><path d="M7 16h13.5a2.5 2.5 0 0 1 0 5h-11a2.5 2.5 0 0 1-2.5-2.5V16Z" /></>,
         desc: '循環ろ過装置により常に清潔なお湯が保たれた、銭湯方式の広々としたお風呂です。スタッフが見守り、必要に応じてお手伝いしますので、安心してゆったりとご入浴いただけます。',
         checks: ['要支援の方もご利用可能です', '入浴前の体調チェックを必ず行います'], reverse: true
     },
     {
-        img: '/exercise.jpg', imgAlt: '運動・機能訓練', title: '運動・機能訓練', icon: <><path d="m6.5 6.5 11 11" /><path d="m21 21-1-1" /><path d="m3 3 1 1" /><path d="m18 22 4-4" /><path d="m2 6 4-4" /><path d="m3 10 7-7" /><path d="m14 21 7-7" /></>,
+        img: './exercise.jpg', imgAlt: '運動・機能訓練', title: '運動・機能訓練', icon: <><path d="m6.5 6.5 11 11" /><path d="m21 21-1-1" /><path d="m3 3 1 1" /><path d="m18 22 4-4" /><path d="m2 6 4-4" /><path d="m3 10 7-7" /><path d="m14 21 7-7" /></>,
         desc: '無理のない範囲で体を動かす機能訓練を行います。専用のマシンを使った運動や、椅子に座ってできる体操など、お一人おひとりに合わせたメニューをご提案します。',
         checks: ['機能訓練指導員がサポートします', '年齢問わず楽しく続けられるプログラムです'], reverse: false
     },
     {
-        img: '/salon.webp', imgAlt: '提携美容院', title: '提携美容院「そうとそうと」', icon: <><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><line x1="20" x2="8.12" y1="4" y2="15.88" /><line x1="14.47" x2="20" y1="14.48" y2="20" /><line x1="8.12" x2="12" y1="8.12" y2="12" /></>,
+        img: './salon.webp', imgAlt: '提携美容院', title: '提携美容院「そうとそうと」', icon: <><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><line x1="20" x2="8.12" y1="4" y2="15.88" /><line x1="14.47" x2="20" y1="14.48" y2="20" /><line x1="8.12" x2="12" y1="8.12" y2="12" /></>,
         desc: '施設横の美容院「そうとそうと」にて、プロの美容師によるヘアカットサービス（税込2,000円）を受けられます。外出の負担を減らし、気軽に身だしなみを整えてリフレッシュできます。',
         checks: ['カットのみ（※カラー・パーマは除く）', 'シャンプーは当施設のお風呂で実施します'], reverse: true
     },
@@ -186,15 +186,15 @@ function ServiceDetails() {
 
 /* ── DailyTimeline ── */
 const timelineSteps = [
-    { am: '8:30', pm: '13:00', title: 'お迎え', img: '/pickup.jpg', desc: '専用車でご自宅の玄関先までお迎えにあがります。車椅子の方も安心してご乗車いただけるようサポートいたします。お時間についてのご相談は可能です。', side: 'left', brightness: true },
-    { am: '9:00', pm: '13:30', title: <>到着・<br className="md:hidden" />健康チェック</>, img: '/arrival.png', desc: '到着後は、看護師による血圧・体温測定などの健康チェックを行います。その日の体調に合わせて無理なく過ごせるよう配慮します。', side: 'right' },
-    { am: '9:30', pm: '14:00', title: '入浴／運動', img: '/exercise.jpg', desc: '銭湯方式の広々としたお風呂でリフレッシュしたり、スタッフのサポートのもと機能訓練を行ったりと、思い思いの時間をお過ごしください。', side: 'left' },
-    { am: '12:00', pm: '16:00', title: 'お送り', img: '/dropoff.jpg', desc: '半日の活動を終えた後は、ご自宅まで安全にお送りいたします。', side: 'right' },
+    { am: '8:30', pm: '13:00', title: 'お迎え', img: './pickup.jpg', desc: '専用車でご自宅の玄関先までお迎えにあがります。車椅子の方も安心してご乗車いただけるようサポートいたします。お時間についてのご相談は可能です。', side: 'left', brightness: true },
+    { am: '9:00', pm: '13:30', title: <>到着・<br className="md:hidden" />健康チェック</>, img: './arrival.png', desc: '到着後は、看護師による血圧・体温測定などの健康チェックを行います。その日の体調に合わせて無理なく過ごせるよう配慮します。', side: 'right' },
+    { am: '9:30', pm: '14:00', title: '入浴／運動', img: './exercise.jpg', desc: '銭湯方式の広々としたお風呂でリフレッシュしたり、スタッフのサポートのもと機能訓練を行ったりと、思い思いの時間をお過ごしください。', side: 'left' },
+    { am: '12:00', pm: '16:00', title: 'お送り', img: './dropoff.jpg', desc: '半日の活動を終えた後は、ご自宅まで安全にお送りいたします。', side: 'right' },
 ];
 
 function DailyTimeline() {
     return (
-        <section className="py-16 md:py-24 bg-[#FAFAFA] overflow-hidden border-t border-border relative" style={{ backgroundImage: "url('/pattern_bg.png')", backgroundRepeat: 'repeat', backgroundSize: '300px' }}>
+        <section className="py-16 md:py-24 bg-[#FAFAFA] overflow-hidden border-t border-border relative" style={{ backgroundImage: "url('./pattern_bg.png')", backgroundRepeat: 'repeat', backgroundSize: '300px' }}>
             <div className="absolute inset-0 bg-white/60" />
             <div className="relative z-10">
                 <div className="max-w-5xl mx-auto px-4">
@@ -233,7 +233,7 @@ function DirectorMessage() {
                 <div className="bg-[#FAFAFA] rounded-3xl p-8 md:p-12 shadow-sm border border-border flex flex-col md:flex-row gap-10 items-center">
                     <div className="w-full max-w-sm md:w-1/3 flex-shrink-0">
                         <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-md bg-gray-200 relative">
-                            <img src="/director.jpg" alt="施設長" className="w-full h-full object-cover" />
+                            <img src="./director.jpg" alt="施設長" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="flex-grow text-center md:text-left">

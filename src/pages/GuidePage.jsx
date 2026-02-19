@@ -45,7 +45,7 @@ export default function GuidePage() {
             {/* PageHeader */}
             <div className="relative w-full h-[400px] flex items-center justify-center text-center">
                 <div className="absolute inset-0 z-0">
-                    <img src="/hero4.jpg" className="w-full h-full object-cover object-[center_30%]" alt="施設案内" />
+                    <img src="./hero4.jpg" className="w-full h-full object-cover object-[center_30%]" alt="施設案内" />
                     <div className="absolute inset-0 bg-white/70" />
                 </div>
                 <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -111,9 +111,9 @@ export default function GuidePage() {
                     </div>
                     <div className="space-y-16">
                         {[
-                            { step: 1, img: '/consultation.webp', title: 'お問い合わせ・ご相談', desc: 'まずはお電話またはお問い合わせフォームよりご連絡ください。現在の状況やお困りごと、ご希望をお伺いします。', note: '担当のケアマネジャーさんがいらっしゃる場合は、ケアマネジャーさんを通じてご連絡いただいても構いません。', reverse: false },
-                            { step: 2, img: '/tour.jpg', title: 'ご見学・ご契約', desc: '実際に施設をご覧いただき、雰囲気や設備をご確認ください。サービス内容にご納得いただけましたら、重要事項のご説明を行い、ご契約となります。', bullets: ['無料体験利用も可能です', '送迎の調整も行います'], reverse: true },
-                            { step: 3, img: '/start.jpg', title: 'ご利用開始', desc: 'いよいよサービス利用スタートです。初回はスタッフが丁寧にご案内しますので、安心してご来所ください。', note: 'ご自宅までお迎えにあがります。持ち物などは事前にご案内いたします。', reverse: false },
+                            { step: 1, img: './consultation.webp', title: 'お問い合わせ・ご相談', desc: 'まずはお電話またはお問い合わせフォームよりご連絡ください。現在の状況やお困りごと、ご希望をお伺いします。', note: '担当のケアマネジャーさんがいらっしゃる場合は、ケアマネジャーさんを通じてご連絡いただいても構いません。', reverse: false },
+                            { step: 2, img: './tour.jpg', title: 'ご見学・ご契約', desc: '実際に施設をご覧いただき、雰囲気や設備をご確認ください。サービス内容にご納得いただけましたら、重要事項のご説明を行い、ご契約となります。', bullets: ['無料体験利用も可能です', '送迎の調整も行います'], reverse: true },
+                            { step: 3, img: './start.jpg', title: 'ご利用開始', desc: 'いよいよサービス利用スタートです。初回はスタッフが丁寧にご案内しますので、安心してご来所ください。', note: 'ご自宅までお迎えにあがります。持ち物などは事前にご案内いたします。', reverse: false },
                         ].map((s, i) => (
                             <div key={i} className={`flex flex-col ${s.reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-12`}>
                                 <div className="w-full md:w-1/2">

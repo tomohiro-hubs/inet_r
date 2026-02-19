@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <div className="mb-4">
-                            <img src="/logo_new.jpg" alt="アイネットデイサービスセンター" className="h-12 w-auto object-contain" />
+                            <img src="./logo_new.jpg" alt="アイネットデイサービスセンター" className="h-12 w-auto object-contain" />
                         </div>
                         <p className="text-sm text-subtext">通常規模型　通所介護　デイサービス<br />〒546-0042 大阪市東住吉区西今川１丁目14-23<br />TEL: 00-0000-0000</p>
                     </div>
