@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist --dotfiles"
   },
   "repository": {
     "type": "git",
