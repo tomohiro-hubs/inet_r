@@ -1,9 +1,12 @@
 import React from 'react';
 import ContactCtaBand from '../components/ContactCtaBand';
 
+import MetaData from '../components/MetaData';
+
 export default function PrivacyPage() {
     return (
         <div className="animate-fade-in">
+            <MetaData title="プライバシーポリシー" description="個人情報の取り扱いについて。ご利用者様のプライバシー保護に努めております。" url="privacy" />
             <div className="bg-clover-light/30 py-12 border-b border-clover-primary/5 text-center">
                 <h1 className="text-3xl font-bold text-clover-dark mb-4">プライバシーポリシー</h1>
                 <p className="text-subtext">個人情報の取り扱いについて</p>

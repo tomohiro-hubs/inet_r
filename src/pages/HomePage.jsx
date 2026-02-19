@@ -252,10 +252,13 @@ function DirectorMessage() {
     );
 }
 
+import MetaData from '../components/MetaData';
+
 /* ── HomePage ── */
 export default function HomePage() {
     return (
         <div className="animate-fade-in">
+            <MetaData title="地域密着型 半日デイサービス" description="地域密着型、半日（3時間）のリハビリ型デイサービス。送迎・入浴・運動・提携美容院サービスを提供しています。" />
             <Hero />
             <KeyPoints />
             <AboutUs />

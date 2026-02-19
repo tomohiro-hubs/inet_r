@@ -39,9 +39,12 @@ function FaqItem({ q, a }) {
     );
 }
 
+import MetaData from '../components/MetaData';
+
 export default function GuidePage() {
     return (
         <div className="animate-fade-in">
+            <MetaData title="ご利用案内・料金" description="アイネットデイサービスセンターのご利用案内ページです。要支援・要介護の方へのサービス内容、1日の流れについてもご案内します。" url="guide" />
             {/* PageHeader */}
             <div className="relative w-full h-[400px] flex items-center justify-center text-center">
                 <div className="absolute inset-0 z-0">

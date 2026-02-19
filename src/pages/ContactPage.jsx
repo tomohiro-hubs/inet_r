@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PhotoSlider from '../components/PhotoSlider';
 
+import MetaData from '../components/MetaData';
+
 export default function ContactPage() {
     return (
         <div className="animate-fade-in">
+            <MetaData title="お問い合わせ" description="アイネットデイサービスセンターへのお問い合わせ・見学のご予約はこちらから。お電話でのご相談も承っております。" url="contact" />
             <div className="bg-clover-light/30 py-12 border-b border-clover-primary/5 text-center">
                 <h1 className="text-3xl font-bold text-clover-dark mb-4">お問い合わせ</h1>
                 <p className="text-subtext">ご利用や見学のご相談はお気軽にご連絡ください。</p>

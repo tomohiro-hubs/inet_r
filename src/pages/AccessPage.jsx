@@ -33,11 +33,14 @@ function ImageModal({ src, onClose }) {
     );
 }
 
+import MetaData from '../components/MetaData';
+
 export default function AccessPage() {
     const [modalImage, setModalImage] = useState(null);
 
     return (
         <div className="animate-fade-in">
+            <MetaData title="施設概要・アクセス" description="大阪市東住吉区西今川にあるアイネットデイサービスセンターの施設概要とアクセス情報。地図、送迎範囲、連絡先をご案内します。" url="access" />
             <ImageModal src={modalImage} onClose={() => setModalImage(null)} />
 
             {/* PageHeader */}
