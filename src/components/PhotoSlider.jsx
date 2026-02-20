@@ -5,7 +5,7 @@ const slideImages = Array.from({ length: 8 }, (_, i) => `${import.meta.env.BASE_
 export default function PhotoSlider({ className = '' }) {
     return (
         <section className={`overflow-hidden ${className}`}>
-            <div className="flex w-max animate-loop-scroll hover:[animation-play-state:paused]">
+            <div className="flex w-max animate-loop-scroll md:hover:[animation-play-state:paused]">
                 {[0, 1].map((set) => (
                     <div key={set} className="flex shrink-0 justify-start gap-8 px-4" aria-hidden={set === 1 ? 'true' : undefined}>
                         {slideImages.map((src, i) => (
