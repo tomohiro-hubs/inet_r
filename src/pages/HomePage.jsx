@@ -41,7 +41,7 @@ function Hero() {
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
                         笑顔と思いやり<br /><span className="text-clover-primary">寄り添う介護</span>
                     </h1>
-                    <p className="text-sm sm:text-base text-clover-primary font-medium -mt-2 tracking-widest">since 2026</p>
+                    <p className="text-sm sm:text-base text-clover-primary font-medium -mt-2 tracking-widest">since 2006</p>
                     <p className="text-lg text-subtext leading-relaxed font-medium">
                         半日（3時間）なので、無理なく続けられるデイサービス。<br className="hidden md:block" />送迎付きで、入浴や機能訓練も安心してご利用いただけます。
                     </p>

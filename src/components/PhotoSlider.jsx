@@ -9,7 +9,7 @@ export default function PhotoSlider({ className = '' }) {
                 {[0, 1].map((set) => (
                     <div key={set} className="flex shrink-0 justify-start gap-8 px-4" aria-hidden={set === 1 ? 'true' : undefined}>
                         {slideImages.map((src, i) => (
-                            <img key={i} src={src} className="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景" loading="lazy" />
+                            <img key={i} src={src} className="h-48 md:h-64 aspect-[3/2] w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景" />
                         ))}
                     </div>
                 ))}
